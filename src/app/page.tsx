@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-4 px-8 pb-8 max-w-[1200px]">
       <h2 className="font-semibold text-3xl">About us</h2>
-      <Image src={HeroPic} alt="hero" />
+      {/* <Image src={HeroPic} alt="hero" /> */}
       <div className="bg-blue-100 p-4 ">
         <p>
           This site is built by researchers in the Mind and Software research

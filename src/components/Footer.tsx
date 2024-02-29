@@ -24,6 +24,9 @@ const Footer = () => {
         <Link href={"/privacy"}>Privacy Policy</Link>
         <Link href={"/terms"}>Terms of Service</Link>
         <Link href={"mailto:info@devxlab.org"}>Feedback</Link>
+        <Link href={"/login"}>
+          <b>Delete Account</b>
+        </Link>
       </nav>
     </footer>
   );
