@@ -8,6 +8,7 @@ import { type ApolloClient } from "@apollo/client";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import { useEffect } from "react";
+import DeleteDialog from "@/components/DeleteDialog";
 
 const Page = () => {
   const client = getClient();
@@ -51,9 +52,7 @@ const Page = () => {
       <h1>
         Account email: <b>{auth.authData?.email}</b>
       </h1>
-      <Button variant={"destructive"} onClick={() => deleteAccount()}>
-        Delete account
-      </Button>
+      <DeleteDialog deleteAccount={deleteAccount} />
       <Button
         onClick={() => {
           localStorage.removeItem("@AuthData");

@@ -10,7 +10,7 @@ import { setContext } from "@apollo/client/link/context";
 import { TokenRefreshLink } from "@/utils/tokenRefresh/tokenRefreshLink";
 import { getCookie, setCookie } from "cookies-next";
 
-const backendUri = "https://dx-backend-v2.herokuapp.com";
+const backendUri = "http://localhost:4000/graphql";
 
 let client: ApolloClient<any> | null = null;
 

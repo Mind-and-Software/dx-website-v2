@@ -32,11 +32,14 @@ export const AUTHORIZE = gql`
           versionNumberTime
           lastForm
           studies {
-            id
-            name
-            description
-            start
-            end
+            count
+            studyId {
+              id
+              name
+              description
+              start
+              end
+            }
           }
           tagCollection {
             location {
